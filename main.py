@@ -15,4 +15,4 @@ print('')
 audioconvert = input('Do you want to convert the video to an MP3 file? (y/n): ')
 if audioconvert == 'y':
     clip = mp.VideoFileClip(video).subclip()
-    clip.audio.write_audiofile(audio_export.mp3)
+    clip.audio.write_audiofile('audio_export.mp3')
